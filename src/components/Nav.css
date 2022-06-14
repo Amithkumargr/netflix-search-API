@@ -1,0 +1,50 @@
+.nav {
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 12px;
+  height: 50px;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.8s;
+}
+.nav_black {
+  background-color: #000;
+
+  width: 100%;
+}
+.logo {
+  position: fixed;
+  left: 20;
+  top: -1px;
+  width: 80px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 12px;
+    height: 50px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.8s;
+  }
+
+  .nav_black {
+    background-color: #000;
+  }
+  .logo {
+    /* position: fixed; */
+    left: 50;
+    top: 40px;
+    width: 80px;
+    object-fit: contain;
+  }
+}
+.search_box {
+  display: flex;
+  justify-content: flex-end;
+}
